@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<title>Test</title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		const value = [10,20,30,40,50,60,70]
+		for(i=0;i<=value.length; i++)
+		{
+			let c = value
+			c.slice(i).forEach(e=> {
+				if(!c[i]) return
+				if(c[i] == e) return
+				console.log(`${c[i]}*${e} =`+c[i]*e)
+			})
+		}
+	</script>
+</html>
